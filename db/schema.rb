@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20110804201102) do
     t.integer  "topic_id",                         :null => false
     t.integer  "moderation_status", :default => 0, :null => false
     t.string   "author_name"
+    t.string   "author_id"
     t.string   "author_email"
     t.string   "author_ip",                        :null => false
     t.string   "author_user_agent"

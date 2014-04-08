@@ -50,7 +50,7 @@ class ApiController < ApplicationController
   
   def add_comment
     prepare!(
-      [:site_key, :topic_key, :topic_title, :topic_url, :content],
+      [:site_key, :topic_key, :topic_title, :topic_url, :author_id, :content],
       [:html, :js, :json]
     )
     begin
@@ -70,7 +70,7 @@ class ApiController < ApplicationController
         if @topic
           @comment = @topic.comments.create!(
             :author_name => params[:author_name],
-            :author_email => params[:author_email],
+            :author_id => params[:author_id],
             :author_ip => request.env['REMOTE_ADDR'],
             :author_user_agent => request.env['HTTP_USER_AGENT'],
             :referer => request.env['HTTP_REFERER'],
