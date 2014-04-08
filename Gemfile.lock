@@ -215,7 +215,7 @@ DEPENDENCIES
   cancan (~> 1.6.10)
   capybara
   capybara-webkit
-  coffee-rails
+  coffee-rails (~> 3.2.0)
   css3buttons
   database_cleaner
   default_value_for
