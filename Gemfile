@@ -16,6 +16,7 @@ gem 'cancan', '~> 1.6.10'
 gem 'inherited_resources'
 gem 'rack', '~> 1.3.10' # fix Rack vulnerability
 gem 'nokogiri'
+gem 'sequel'
 
 # Deploy with Capistrano
 # gem 'capistrano'
