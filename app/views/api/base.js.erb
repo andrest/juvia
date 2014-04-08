@@ -157,9 +157,7 @@ if (!Juvia) {
 			}
 			$(style).appendTo(document.head || $('head')[0] || document.body);
 		}
-		// Add profile pictures
-		var container = $('.profile-picture-wrapper');
-		$.each(container, function(){
+		$.each($('.profile-picture-wrapper'), function(){
 		  $(this).load( '/user/'+ $(this).attr('data-user-id') + '/profile_pic' );
 		});
 	}
@@ -180,9 +178,7 @@ if (!Juvia) {
 	    	comment.prependTo(comments);
 	    <% end %>
 
-	  // Add profile pictures
-	  var container = $('.profile-picture-wrapper');
-	  $.each(container, function(){
+	  $.each($('.profile-picture-wrapper'), function(){
 	    $(this).load( '/user/'+ $(this).attr('data-user-id') + '/profile_pic' );
 	  });
 
