@@ -175,6 +175,12 @@ if (!Juvia) {
 	    	comment.prependTo(comments);
 	    <% end %>
 	    
+	  // Add profile pictures
+	  var container = $('.profile-picture-wrapper');
+	  $.each(container, function(){
+	    $(this).load( '/user/'+ $(this).attr('data-user-id') + '/profile_pic' );
+	  });
+
 		$('.juvia-preview-empty', container).show();
 		$('.juvia-preview-content', container).hide();
 		
