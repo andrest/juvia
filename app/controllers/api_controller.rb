@@ -26,6 +26,7 @@ class ApiController < ApplicationController
     @topic_title = params[:topic_title]
     @topic_url   = params[:topic_url]
     @author_id   = params[:author_id]
+    @author_name   = params[:author_name]
     @include_base = get_boolean_param(:include_base, true)
     @include_css  = get_boolean_param(:include_css, true)
     # Must come before error checking because the error

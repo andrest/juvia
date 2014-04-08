@@ -245,7 +245,7 @@ if (!Juvia) {
 			topic_title : $container.data('topic-title'),
 			topic_url   : $container.data('topic-url'),
 			author_id   : $container.data('author-id'),
-			author_name : $('input[name="author_name"]', form).val(),
+			author_name : $container.data('author-name'),
 			author_email: $('input[name="author_email"]', form).val(),
 			content     : this.compress($('textarea[name="content"]', form).val())
 		});
