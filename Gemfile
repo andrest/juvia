@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-
-gem 'rails', '3.1.12'
+ruby '1.9.3'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,7 +14,7 @@ gem 'will_paginate', '~> 3.0.pre4'
 gem 'css3buttons'
 gem 'cancan', '~> 1.6.10'
 gem 'inherited_resources'
-gem 'rack', '~> 1.3.10' # fix Rack vulnerability
+gem 'rack', '~> 1.4.5' # fix Rack vulnerability
 gem 'nokogiri'
 gem 'sequel'
 
@@ -50,7 +50,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.5'
+  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
 end
