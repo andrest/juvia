@@ -24,8 +24,9 @@
 	<% else %>
 		<div class="juvia-comments juvia-no-comments">There are no comments yet.</div>
 	<% end %>
-	
-	<h3>Add comment</h3>
-	<%= render :partial => 'form' %>
+	<% if @author_id && @author_id != '' do
+		<h3>Add comment</h3>
+		<%= render :partial => 'form' %>
+	<% end %>
 </div>
 </div> <!-- juvia-container -->
