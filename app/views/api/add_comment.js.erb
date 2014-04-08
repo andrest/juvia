@@ -2,5 +2,6 @@
   :action    => 'AddComment',
   :site_key  => @site_key,
   :topic_key => @topic_key,
+  :author_id => @author_id,
   :html      => render(:partial => 'api/comment.html', :locals => { :comment => @comment })
 ) %>
