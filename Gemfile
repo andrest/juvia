@@ -64,7 +64,7 @@ group :postgres do
   gem 'pg', :require => false
 end
 
-group :sqlite do
-  # adapter: sqlite3
-  gem 'sqlite3', :require => false
-end
+# group :sqlite do
+#   # adapter: sqlite3
+#   gem 'sqlite3', :require => false
+# end
