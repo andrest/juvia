@@ -87,6 +87,8 @@ if (!Juvia) {
 	Juvia.findContainer = function(options) {
 		return $('.juvia-container[data-site-key="' +
 			options.site_key +
+			'"][data-author-id="' +
+			options.author_id +
 			'"][data-topic-key="' +
 			options.topic_key +
 			'"]');
