@@ -157,6 +157,11 @@ if (!Juvia) {
 			}
 			$(style).appendTo(document.head || $('head')[0] || document.body);
 		}
+		// Add profile pictures
+		var container = $('.profile-picture-wrapper');
+		$.each(container, function(){
+		  $(this).load( '/user/'+ $(this).attr('data-user-id') + '/profile_pic' );
+		});
 	}
 	
 	Juvia.handleAddComment = function(options) {
@@ -174,7 +179,7 @@ if (!Juvia) {
 	    <% else %>
 	    	comment.prependTo(comments);
 	    <% end %>
-	    
+
 	  // Add profile pictures
 	  var container = $('.profile-picture-wrapper');
 	  $.each(container, function(){
