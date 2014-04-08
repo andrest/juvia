@@ -1,20 +1,20 @@
 development:
-  adapter: mysql2
+  adapter: postgresql
   database: juvia
   host: localhost
   username:
   password:
 
 test:
-  adapter: mysql2
+  adapter: postgresql
   database: juvia
   host: localhost
   username:
   password:
 
 production:
-  adapter: mysql2
+  adapter: postgresql
+  host:
   database: juvia
-  host: localhost
-  username:
+  username: test-postgres
   password:
