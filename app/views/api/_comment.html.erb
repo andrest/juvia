@@ -2,10 +2,7 @@
 	<div class="juvia-metadata">
 
 		<div class="juvia-avatar">
-			<img src="<%= ENV['NOVELMATES_URL'] %>/user/<%= comment.author_id || 'Anonymous' %>/profile_pic"
-			width="64"
-			height="64"
-			alt="<%= comment.author_id || 'Anonymous' %>">
+			<div class="profile-picture-wrapper" data-user-id="<%= (comment.author_id || 'none') %>"></div>
 		</div>
 
 		<div class="juvia-author juvia-author-without-email">
