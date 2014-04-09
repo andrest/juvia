@@ -96,14 +96,14 @@ shared_examples "showing a topic and commenting with the Javascript API" do
     
     it "says that there are no comments", :js => true do
       show_topic('hatsuneshima', 'foo')
-      page.should have_css('#comments', :text => /There are no comments yet/)
+      page.should have_css('#comments', :text => /There are no posts yet/)
     end
     
     it "hides the 'there are no comments' text after posting", :js => true do
       show_topic(@site_key, @topic_key)
       fill_in 'content', :with => 'a *new* comment!'
       click_button 'Submit'
-      page.should have_no_css('#comments', :text => /There are no comments yet/)
+      page.should have_no_css('#comments', :text => /There are no posts yet/)
     end
     
     it "creates the topic upon posting and sets its URL to the given topic_url", :js => true do
